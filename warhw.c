@@ -28,12 +28,12 @@
 MODULE_AUTHOR("David Cantrell <dcantrell@redhat.com>");
 MODULE_DESCRIPTION("War Hardware support");
 MODULE_LICENSE("GPL");
-MODULE_VERSION("0.1");
+MODULE_VERSION("0.2");
 MODULE_INFO(warhw, "War Hardware");
 
 static int warhw_proc_show(struct seq_file *m, void *v)
 {
-    seq_printf(m, "WARHW\n24-Oct-2016 through 28-Oct-2016\n");
+    seq_printf(m, "WARHW\n23-Oct-2017 through 27-Oct-2017\n");
     return 0;
 }
 
