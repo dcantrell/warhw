@@ -33,7 +33,7 @@ MODULE_INFO(warhw, "War Hardware");
 
 static int warhw_proc_show(struct seq_file *m, void *v)
 {
-    seq_printf(m, "WARHW\n23-Oct-2017 through 27-Oct-2017\n");
+    seq_printf(m, "WARHW\n28-Oct-2019 through 01-Nov-2019\n");
     return 0;
 }
 
