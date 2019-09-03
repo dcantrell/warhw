@@ -2,6 +2,6 @@ WARHW
 War Hardware kernel module
 
 Currently consumes memory in order to readily report the week that WARHW
-occurs in 2017.  Simply cat /proc/warhw to remind yourself.
+occurs in 2019.  Simply cat /proc/warhw to remind yourself.
 
 Patches welcome.  I encourage excessive expansion of this kernel module.
