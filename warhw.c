@@ -33,7 +33,7 @@ MODULE_INFO(warhw, "War Hardware");
 
 static int warhw_proc_show(struct seq_file *m, void *v)
 {
-    seq_printf(m, "WARHW\n26-Oct-2020 through 30-Oct-2020\n");
+    seq_printf(m, "WARHW\n24-Oct-2022 through 28-Oct-2022\n");
     return 0;
 }
 
@@ -42,12 +42,11 @@ static int warhw_proc_open(struct inode *inode, struct file *file)
     return single_open(file, warhw_proc_show, NULL);
 }
 
-static const struct file_operations warhw_proc_fops = {
-    .owner   = THIS_MODULE,
-    .open    = warhw_proc_open,
-    .read    = seq_read,
-    .llseek  = seq_lseek,
-    .release = single_release,
+static const struct proc_ops warhw_proc_fops = {
+    .proc_open    = warhw_proc_open,
+    .proc_read    = seq_read,
+    .proc_lseek  = seq_lseek,
+    .proc_release = single_release,
 };
 
 static int __init warhw_init(void)
